@@ -1,0 +1,17 @@
+{
+    "name": "allanrodrigues/beat-the-dot",
+    "authors": [
+        {
+            "name": "allanrodriguesmachado",
+            "email": "allan.rodrigues14@hotmail.com"
+        }
+    ],
+    "require": {
+      "ext-mysqli": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    }
+}
