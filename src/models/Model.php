@@ -28,7 +28,7 @@ class Model
     /**
      * @param $arr
      */
-    public function  loadFromArray($arr)
+    public function loadFromArray($arr)
     {
         if($arr){
             foreach($arr as $key => $value){
@@ -43,7 +43,7 @@ class Model
      */
     public function __get($key)
     {
-        return $this->values;
+        return $this->values[$key];
     }
 
     /**
@@ -55,6 +55,23 @@ class Model
         $this->values[$key] = $value;
     }
 
+    /**
+     * @param array $filters
+     * @param string $columns
+     * @return mixed|null
+     */
+    public static function getOne($filters = [], $columns = '*')
+    {
+        $class = get_called_class();
+        $result = static::getResultSetFromSelect($filters, $columns);
+        return $result ? new $class($result->fetch_assoc()) : null;
+    }
+
+    /**
+     * @param array $filters
+     * @param string $columns
+     * @return array
+     */
     public static function get($filters = [], $columns = '*')
     {
         $objects = [];
@@ -68,6 +85,11 @@ class Model
         return $objects;
     }
 
+    /**
+     * @param array $filters
+     * @param string $columns
+     * @return bool|mysqli_result|null
+     */
     public static function getResultSetFromSelect($filters = [], $columns = '*')
     {
         $sql = "SELECT ${columns} FROM "
@@ -81,6 +103,10 @@ class Model
         }
     }
 
+    /**
+     * @param $filters
+     * @return string
+     */
     private static function getFilters($filters)
     {
         $sql = '';
@@ -93,6 +119,10 @@ class Model
         return $sql;
     }
 
+    /**
+     * @param $value
+     * @return mixed|string
+     */
     private static function getFormatedValue($value)
     {
         if(is_null($value)){
