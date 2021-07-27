@@ -1,17 +1,17 @@
 {
-    "name": "allanrodrigues/beat-the-dot",
-    "authors": [
-        {
-            "name": "allanrodriguesmachado",
-            "email": "allan.rodrigues14@hotmail.com"
-        }
-    ],
-    "require": {
-      "ext-mysqli": "*"
-    },
+    "name": "allan/beat-the-dot",
+    "description": "Projeto Bater Ponto",
     "autoload": {
         "psr-4": {
             "src\\": "src/"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "allanrodriguesmachado",
+            "email": "allan.rodrigues14@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {}
 }
