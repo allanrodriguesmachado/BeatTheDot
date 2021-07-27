@@ -2,5 +2,6 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
+require_once(dirname(__FILE__, 2) . 'src/config/Database.php');
 
-echo "<h1>OK</h1>";
+Database::getConnection();

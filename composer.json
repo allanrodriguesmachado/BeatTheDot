@@ -1,11 +1,4 @@
 {
-    "name": "allan/beat-the-dot",
-    "description": "Projeto Bater Ponto",
-    "autoload": {
-        "psr-4": {
-            "src\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "allanrodriguesmachado",
@@ -13,5 +6,14 @@
             "role": "Developer"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "description": "Projeto Bater Ponto",
+    "name": "allan/beat-the-dot",
+    "require": {
+        "ext-mysqli": "*"
+    }
 }
