@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/comum.css" class="css">
-    <link rel="stylesheet" href="assets/bootstrap.min.css" class="css">
-    <link rel="stylesheet" href="assets/icofont.min.css" class="css">
-    <link rel="stylesheet" href="assets/login.css" class="css">
+    <link rel="stylesheet" href="assets/css/comum.css" class="css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" class="css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css" class="css">
+    <link rel="stylesheet" href="assets/css/login.css" class="css">
     <title>Beath The Dot</title>
 </head>
 <body>

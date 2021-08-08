@@ -1,11 +1,11 @@
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
-
+    /*background-color: #ddd;*/
+    background-image: linear-gradient(to right, #20c997, #1bb487);
 }
 
 .form-login{
@@ -35,3 +35,5 @@ button.btn:hover{
     color: white;
     transition: 1s;
 }
+
+
