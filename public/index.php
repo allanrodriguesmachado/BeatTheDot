@@ -1,6 +1,6 @@
 <?php
 
-require_once (dirname(__FILE__,2) . '/src/Config/Database.php');
+require_once(dirname(__FILE__, 2) . '/app/Config/Database.php');
 
 $sql = 'select * from users';
 
