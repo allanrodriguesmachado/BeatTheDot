@@ -20,7 +20,8 @@ class Database
         return $conn;
     }
 
-    public static function getResultFromQuery($sql){
+    public static function getResultFromQuery($sql): mysqli_result|bool
+    {
         $conn = self::getConnection();
         $result = $conn->query($sql);
         $conn->close();

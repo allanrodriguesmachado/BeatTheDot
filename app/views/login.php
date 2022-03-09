@@ -39,7 +39,6 @@
         <div class="card-footer">
             <button class="btn btn-lg ">Entrar</button>
         </div>
-
     </div>
 </form>
 </body>
