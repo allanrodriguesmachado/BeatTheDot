@@ -1,30 +1,28 @@
 <?php
 
-class Database
+namespace App\DataBase;
+
+class DataBase
 {
     public static function getConnection()
     {
         $envPath = realpath(dirname(__FILE__) . '/../env.ini');
         $env = parse_ini_file($envPath);
-        $conn = new mysqli(
-          $env['host'],
-          $env['username'],
-          $env['password'],
-          $env['database'],
-        );
+        $conn = new \mysqli($env['host'], $env['username'], $env['password'], $env['database']);
 
-        if($conn->connect_error){
-            die("Error: " .  $conn->connect_error);
+        if ($conn->connect_error) {
+            die("Error " . $conn->connect_error);
         }
 
         return $conn;
     }
 
-    public static function getResultFromQuery($sql): mysqli_result|bool
+    public static function getResultFromQuery($sql): \mysqli_result|bool
     {
         $conn = self::getConnection();
         $result = $conn->query($sql);
         $conn->close();
+
         return $result;
     }
 }

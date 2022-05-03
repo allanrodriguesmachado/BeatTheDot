@@ -1,5 +1,5 @@
 # Beat The Dot
 
-> Projeto de bater ponto em arquitetura MVC
+> Hitting project made in PHP with MVC structure
 
-## Versão 1.0.0
+## Version 1.0.0

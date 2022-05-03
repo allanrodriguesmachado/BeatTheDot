@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="BeatTheDot@localhost" uuid="dbcd5a8e-b7f2-410a-96b3-672276c9a8de">
+    <data-source source="LOCAL" name="BeatTheDot@localhost" uuid="595cb237-a949-4223-a5ac-38fa435c9228">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/BeatTheDot</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="User Data Source" uuid="b746f414-1a9f-4c0d-aa7e-c11e8a440ae3">
-      <synchronize>true</synchronize>
-      <configured-by-url>true</configured-by-url>
-      <jdbc-driver>java.sql.Driver</jdbc-driver>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

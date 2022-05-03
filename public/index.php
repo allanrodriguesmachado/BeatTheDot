@@ -1,10 +1,9 @@
 <?php
 
-require_once(dirname(__FILE__, 2) . '/app/Config/config.php');
-require_once(dirname(__FILE__, 2) . '/app/views/login.php');
 
-//foreach (User::get([], 'name') as $user){
-//    echo $user->name;
-//}
-//
-//var_dump($user);
+require_once(dirname(__FILE__, 2) . '/app/config/config.php');
+require_once(dirname(__FILE__, 2) . '/app/models/User.php');
+
+$user = new User(['name' => 'Allan', 'email' => 'allan@php.com.br']);
+
+print_r($user);
